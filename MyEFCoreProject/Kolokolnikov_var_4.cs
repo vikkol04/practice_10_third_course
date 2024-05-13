@@ -64,6 +64,7 @@ namespace ConsoleApp1
             }
             // Delete
             using (var context = new ProjectsContext())
+            {
                 var teamMember = context.TeamMembers.FirstOrDefault(tm => tm.LastName == "Syhorykov");
                 if (teamMember != null)
                 {
